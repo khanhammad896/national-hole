@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Footer from "../../components/Footer";
 import Navbar from "../../components/Navbar";
 import HomeElement1 from "./HomeElement1";
 import HomeElement2 from "./HomeElement2";
@@ -26,6 +27,7 @@ const Home = () => {
                     <HomeElement5 />
                     <HomeElement6 />
                     <HomeElement7 />
+                    <Footer />
                   </div>
                 </div>
               </div>

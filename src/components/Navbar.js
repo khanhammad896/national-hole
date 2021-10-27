@@ -28,10 +28,10 @@ const Navbar = () => {
                   <div className="menu-main-menu-container">
                     <ul className="menu-main-item">
                       <li className="menu-item">
-                        <Link>Home</Link>
+                        <Link to="/">Home</Link>
                       </li>
                       <li className="menu-item">
-                        <Link>About</Link>
+                        <Link to="/about">About</Link>
                       </li>
                       <li className="menu-item">
                         <Link>Register</Link>
@@ -49,7 +49,7 @@ const Navbar = () => {
                         <Link>Facts & Feats</Link>
                       </li>
                       <li className="menu-item">
-                        <Link>Contact</Link>
+                        <Link to="./contact">Contact</Link>
                       </li>
                     </ul>
                   </div>
