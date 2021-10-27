@@ -10,8 +10,8 @@ const HomeElement1 = () => {
         <div className="et_pb_section et_pb_section_0 sd-top-section-form et_pb_with_background et_section_regular">
           <div className="et_pb_row et_pb_row_0">
             <Grid container>
-              <Grid item xs={12} md={6}></Grid>
-              <Grid item xs={12} md={6} id="et_last_child">
+              <Grid item xs={12} sm={12} md={6}></Grid>
+              <Grid item xs={12} sm={12} md={6} id="et_last_child">
                 <div id="slider-form">
                   <p></p>
                   <div className="cf-register-form-2">
@@ -214,5 +214,15 @@ const HomeElement1Wrapper = styled.div`
   #slider-form input[type="submit"]:hover {
     background: #fff;
     color: #0d4a2b;
+  }
+
+  @media screen and (max-width: 900px) {
+    #et_last_child {
+      display: flex;
+      justify-content: center;
+    }
+    .cf-register-form-2 {
+      max-width: 400px;
+    }
   }
 `;

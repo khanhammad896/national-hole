@@ -208,4 +208,15 @@ const HomeElement4Wrapper = styled.div`
   .et_pb_row3 {
     display: flex;
   }
+
+  @media screen and (max-width: 980px) {
+    .et_pb_row {
+      padding-bottom: 30px !important;
+    }
+    .et_pb_column {
+      width: 47.25%;
+      margin-right: 5.5%;
+      margin-bottom: 30 px;
+    }
+  }
 `;

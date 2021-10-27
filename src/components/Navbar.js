@@ -8,7 +8,7 @@ const Navbar = () => {
     <>
       <NavbarWrapper>
         <Grid container>
-          <Grid item xs={12} sm={4} id="site-logo">
+          <Grid item xs={12} sm={12} md={12} lg={3} id="site-logo">
             <Link to="/">
               <img src={logo} alt="national-hole" />
               <div id="tag-line">
@@ -17,7 +17,7 @@ const Navbar = () => {
               </div>
             </Link>
           </Grid>
-          <Grid item xs={12} sm={5} id="sd-socials">
+          <Grid item xs={12} sm={12} md={12} lg={4} id="sd-socials">
             <span>
               Holes In One Submitted: 90,790
               <Link className="sd-btn hide-on-mobile">Register Now!</Link>
@@ -169,5 +169,18 @@ const NavbarWrapper = styled.div`
   .menu-item a:hover {
     color: #fff;
     background: #484848;
+  }
+
+  @media screen and (max-width: 1199px) {
+    #site-logo {
+      display: flex;
+      justify-content: center;
+    }
+    #sd-socials {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
   }
 `;

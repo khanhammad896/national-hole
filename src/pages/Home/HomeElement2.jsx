@@ -21,7 +21,7 @@ const HomeElement2 = () => {
                     <p></p>
                     <h3>REGISTER</h3>
                     <p></p>
-                    <p>
+                    <p className="last-p">
                       Register your hole-in-one and assure your amazing feat is
                       historically recorded.
                     </p>
@@ -39,7 +39,7 @@ const HomeElement2 = () => {
                     <p></p>
                     <h3>COMMEMORATE</h3>
                     <p></p>
-                    <p>
+                    <p className="last-p">
                       Take this opportunity to purchase an official National
                       Hole-In-One Registry certificate and other products
                     </p>
@@ -57,7 +57,7 @@ const HomeElement2 = () => {
                     <p></p>
                     <h3>CELEBRATE YOUR ACE</h3>
                     <p></p>
-                    <p>
+                    <p className="last-p">
                       Have your achievement known to players around the world.
                       Shop our recognition products here.
                     </p>
@@ -130,6 +130,15 @@ const HomeElement2Wrapper = styled.div`
   @media screen and (max-width: 980px) {
     .et_pb_column {
       width: 100%;
+      margin-bottom: 30px;
+      margin-right: 0 !important;
+    }
+
+    .et_pb_column2 {
+      margin: 0 !important;
+    }
+    .last-p {
+      padding: 0 !important;
     }
   }
 `;

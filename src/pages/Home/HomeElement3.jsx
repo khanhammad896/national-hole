@@ -94,4 +94,24 @@ const HomeElement3Wrapper = styled.div`
     margin-top: 10px;
     font-size: 13px;
   }
+
+  @media screen and (min-width: 150px) and (max-width: 780px) {
+    .sd-single-prod {
+      width: 33.333% !important;
+      margin-top: 30px;
+    }
+  }
+  @media screen and (min-width: 150px) and (max-width: 580px) {
+    .sd-single-prod {
+      width: 50% !important;
+      min-height: 140px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .et_pb_row {
+      width: 100% !important;
+      padding: 10px;
+    }
+  }
 `;
