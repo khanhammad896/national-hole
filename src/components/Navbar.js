@@ -1,9 +1,11 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import { Grid } from "@mui/material";
 import { Link } from "react-router-dom";
 import logo from "../assets/logo-1.png";
+import { FaBars } from "react-icons/fa";
 const Navbar = () => {
+  const [showMenu, setShowMenu] = useState(false);
   useEffect(() => {
     window.onscroll = function () {
       scrollFunction();
@@ -66,10 +68,66 @@ const Navbar = () => {
           </div>
         </Grid>
       </SliderNavbar>
+      <MobileMenu>
+        <div className="sd-top">
+          <div className="row">
+            <div className="cat-parent" onClick={() => setShowMenu(!showMenu)}>
+              <i className="icon">
+                <FaBars />
+              </i>
+            </div>
+            <div
+              className={
+                showMenu ? "sd-mobile-menu show-menu" : "sd-mobile-menu"
+              }
+            >
+              <div className="top-menu">
+                <ul className="mobile-menu">
+                  <li>
+                    <Link to="/">Home</Link>
+                  </li>
+                  <li>
+                    <Link to="/about">About</Link>
+                  </li>
+                  <li>
+                    <Link>Register</Link>
+                  </li>
+                  <li>
+                    <Link>Certificates</Link>
+                  </li>
+                  <li>
+                    <Link>Products</Link>
+                  </li>
+                  <li>
+                    <Link>Facts and Feats</Link>
+                  </li>
+                  <li>
+                    <Link>Records</Link>
+                  </li>
+                  <li>
+                    <Link to="/contact">Contact</Link>
+                  </li>
+                  <li>
+                    <Link>Search Registry</Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div className="mobile-logo">
+              <Link to="/">
+                <img src={logo} alt="national-hole" />
+              </Link>
+            </div>
+            <div className="simple-mob-text">
+              <span>Over 90,828 Registrations Submitted!</span>
+            </div>
+          </div>
+        </div>
+      </MobileMenu>
 
       <NavbarWrapper>
         <Grid container>
-          <Grid item xs={12} sm={12} md={12} lg={3} id="site-logo">
+          <Grid item id="site-logo">
             <Link to="/">
               <img src={logo} alt="national-hole" />
               <div id="tag-line">
@@ -78,7 +136,7 @@ const Navbar = () => {
               </div>
             </Link>
           </Grid>
-          <Grid item xs={12} sm={12} md={12} lg={4} id="sd-socials">
+          <Grid item id="sd-socials">
             <span>
               Holes In One Submitted: 90,790
               <Link className="sd-btn hide-on-mobile">Register Now!</Link>
@@ -232,17 +290,21 @@ const NavbarWrapper = styled.div`
     background: #484848;
   }
 
-  @media screen and (max-width: 1199px) {
-    #site-logo {
-      display: flex;
-      justify-content: center;
-    }
+  @media screen and (min-width: 841px) and (max-width: 1039px) {
+    .#site-logo,
     #sd-socials {
+      width: 100% !important;
+      text-align: center;
       display: flex;
-      flex-direction: column;
-      align-items: center;
       justify-content: center;
     }
+    #sd-socials span {
+      text-align: center;
+    }
+  }
+
+  @media screen and (max-width: 840px) {
+    display: none;
   }
 `;
 
@@ -372,6 +434,112 @@ const SliderNavbar = styled.div`
     }
     .tag-line h2 {
       font-size: 14px !important;
+    }
+  }
+
+  @media screen and (max-width: 840px) {
+    display: none;
+  }
+`;
+
+const MobileMenu = styled.div`
+  .sd-top {
+    width: 100%;
+    float: left;
+    text-align: right;
+    border-bottom: 3px solid #0d492b;
+  }
+  .row {
+    // display: block !important;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    background: #fff;
+    border-bottom: 3px solid #0d4a2b;
+    display: none;
+    align-items: center;
+  }
+  .row:before {
+    content: " ";
+    display: table;
+  }
+
+  .cat-parent {
+    width: 50px;
+    float: left;
+    text-align: center;
+  }
+
+  .icon {
+    display: block;
+    padding: 8px;
+    font-size: 34px;
+    background: #0d4a2b;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .mobile-logo {
+    width: 46px;
+    float: left;
+    margin: 2px 10px 0;
+  }
+  .mobile-logo a {
+    display: block;
+  }
+  .mobile-logo a img {
+    float: left;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .simple-mob-text {
+    float: right;
+    flex-grow: 1;
+    padding: 0 13px;
+  }
+  .simple-mob-text span {
+    font-family: RobotoSlabLight, serif;
+    font-size: 13px;
+    display: block;
+    text-align: right;
+    color: #0d4a2b;
+    line-height: 1.7em;
+  }
+
+  .sd-mobile-menu {
+    position: absolute;
+    width: 100%;
+    text-align: left;
+    top: -1000px;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    font-weight: 500;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1.7em;
+  }
+  .show-menu {
+    top: 40px !important;
+  }
+  .mobile-menu {
+    list-style: none;
+  }
+  .mobile-menu li a {
+    padding: 10px;
+    background: #0d4a2b;
+    color: #fff;
+    display: block;
+    font-size: 17px;
+    border-bottom: 1px solid #155434;
+    font-family: RalewayThin, sans-serif;
+  }
+  @media screen and (max-width: 840px) {
+    .row {
+      display: flex;
     }
   }
 `;

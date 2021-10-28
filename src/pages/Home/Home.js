@@ -60,4 +60,10 @@ const HomeWrapper = styled.div`
     margin-bottom: 0 !important;
     padding-top: 0;
   }
+
+  @media screen and (min-width: 150px) and (max-width: 840px) {
+    #et-main-area {
+      margin-top: 70px;
+    }
+  }
 `;
