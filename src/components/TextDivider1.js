@@ -74,4 +74,18 @@ const TextDivider1Wrapper = styled.div`
     content: "\f002";
     margin-right: 5px;
   }
+
+  @media screen and (min-width: 150px) and (max-width: 780px) {
+    .sd-new-anchor {
+      width: 100%;
+      line-height: 50px;
+      margin-top: 15px;
+      display: block;
+      float: none !important;
+      margin-left: -30px;
+    }
+    .sd-new-anchor a {
+      font-size: 13px !important;
+    }
+  }
 `;

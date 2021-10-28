@@ -225,4 +225,9 @@ const HomeElement1Wrapper = styled.div`
       max-width: 400px;
     }
   }
+  @media screen and (max-width: 399px) {
+    .cf-register-form-2 {
+      width: 100% !important;
+    }
+  }
 `;

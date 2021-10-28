@@ -49,7 +49,7 @@ const Navbar = () => {
                   <Link>Register</Link>
                 </li>
                 <li className="menu-item">
-                  <Link>Registry Lookup</Link>
+                  <Link to="/look-up">Registry Lookup</Link>
                 </li>
                 <li className="menu-item">
                   <Link>Certificates</Link>
@@ -156,7 +156,7 @@ const Navbar = () => {
                         <Link>Register</Link>
                       </li>
                       <li className="menu-item">
-                        <Link>Registry Lookup</Link>
+                        <Link to="/look-up">Registry Lookup</Link>
                       </li>
                       <li className="menu-item">
                         <Link>Certificates</Link>

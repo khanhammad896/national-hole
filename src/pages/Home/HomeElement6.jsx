@@ -198,4 +198,19 @@ const HomeElement6Wrapper = styled.div`
   p:not(.has-background):last-of-type {
     padding-bottom: 0;
   }
+  @media screen and (min-width: 150px) and (max-width: 780px) {
+    .quoted h2 {
+      font-size: 23px !important;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .et-pb-section {
+      width: 100% !important;
+      padding: 10px;
+      padding-bottom: 0px !important;
+    }
+    .et-pb-row {
+      padding: 15px;
+    }
+  }
 `;

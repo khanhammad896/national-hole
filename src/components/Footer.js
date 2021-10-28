@@ -5,7 +5,7 @@ const Footer = () => {
     <>
       <FooterWrapper>
         <p>
-          Copyright © 2019 NationalHoleInOneRegistry.com.{" "}
+          Copyright © 2019 NationalHoleInOneRegistry.com.
           <span>All Rights Reserved.</span>
         </p>
       </FooterWrapper>
@@ -28,5 +28,10 @@ const FooterWrapper = styled.div`
     font-weight: 500;
     line-height: 23.8px;
     font-size: 14px;
+  }
+  @media screen and (min-width: 150px) and (max-width: 780px) {
+    span {
+      display: block;
+    }
   }
 `;

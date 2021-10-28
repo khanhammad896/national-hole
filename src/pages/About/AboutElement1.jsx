@@ -166,4 +166,20 @@ const AboutElement1Wrapper = styled.div`
     padding: 0.3em 2em 0.3em 0.7em;
     border: 2 px solid transparent;
   }
+  @media screen and (max-width: 980px) {
+    .et-pb-column {
+      width: 100%;
+      margin-bottom: 30px;
+      margin-right: 0 !important;
+    }
+    .et_pb_image {
+      margin: 0 !important;
+    }
+  }
+
+  @media screen and (min-width: 150px) and (max-width: 840px) {
+    .et-pb-section {
+      margin-top: 50px;
+    }
+  }
 `;

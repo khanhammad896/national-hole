@@ -32,10 +32,10 @@ const HomeElement4 = () => {
                 <span>128,000</span>
               </div>
             </div>
-            <div className="et_pb_column et_pb_column2">
+            <div className="et_pb_column et_pb_column2 no-margin">
               <div className="et_pb_image">
                 <span className="et_pb_image_wrap">
-                  <img alt="img0" src={img0} />
+                  <img alt="img0" src={img1} />
                 </span>
               </div>
               <div className="et_pb_code">
@@ -50,7 +50,7 @@ const HomeElement4 = () => {
             <div className="et_pb_column et_pb_column3">
               <div className="et_pb_image">
                 <span className="et_pb_image_wrap">
-                  <img alt="img0" src={img0} />
+                  <img alt="img0" src={img2} />
                 </span>
               </div>
               <div className="et_pb_code">
@@ -64,10 +64,10 @@ const HomeElement4 = () => {
                 <span>24</span>
               </div>
             </div>
-            <div className="et_pb_column et_pb_column4">
+            <div className="et_pb_column et_pb_column4 no-margin">
               <div className="et_pb_image">
                 <span className="et_pb_image_wrap">
-                  <img alt="img0" src={img0} />
+                  <img alt="img0" src={img3} />
                 </span>
               </div>
               <div className="et_pb_code">
@@ -102,7 +102,6 @@ export default HomeElement4;
 const HomeElement4Wrapper = styled.div`
   padding: 54px 0;
   width: 100%;
-  height: 641.38px;
   background-image: url(${(props) => props.bgImg}) !important;
   background-position: center;
   background-size: cover;
@@ -216,7 +215,43 @@ const HomeElement4Wrapper = styled.div`
     .et_pb_column {
       width: 47.25%;
       margin-right: 5.5%;
-      margin-bottom: 30 px;
+      margin-bottom: 30px;
+    }
+    .no-margin {
+      margin-right: 0 !important;
+    }
+
+    .et_pb_row3 {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0 !important;
+    }
+    .et_pb_button_column {
+      width: 100%;
+      margin-right: 0 !important;
+      margin-bottom: 30px;
+    }
+    .et_pb_image {
+      margin-bottom: 30px !important;
+    }
+    .et_pb_code {
+      margin-bottom: 30px !important;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .et_pb_row {
+      width: 100% !important;
+      padding: 10px;
+    }
+    .et_pb_row2 {
+      padding-top: 0px !important;
+      padding-bottom: 10px !important;
+    }
+    .et_pb_column {
+      margin: 0 0 30px 0;
+      width: 100% !important;
     }
   }
 `;

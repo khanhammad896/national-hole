@@ -97,4 +97,17 @@ const HomeElement7Wrapper = styled.div`
   p:not(.has-background):last-of-type {
     padding-bottom: 0;
   }
+  @media screen and (min-width: 150px) and (max-width: 580px) {
+    ul li {
+      width: 50% !important;
+      min-height: 140px;
+      padding: 0 7px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .et-pb-section {
+      width: 100%;
+      padding: 10px !important;
+    }
+  }
 `;

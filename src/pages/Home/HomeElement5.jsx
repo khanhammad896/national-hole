@@ -77,7 +77,7 @@ const HomeElement5 = () => {
               </div>
 
               <div id="num-buttons">
-                {[1, 2, 3, 4].map((i) => (
+                {[1, 2, 3, 4, 5].map((i) => (
                   <span
                     className={
                       currentSlide === i - 1
@@ -140,7 +140,9 @@ const HomeElement5Wrapper = styled.div`
     position: relative;
   }
   .carousel-item {
-    width: 1080px;
+    // width: 1080px;
+    width: 100%;
+    // min-width: 624px;
   }
   .cf-hole-list {
     margin: 0 !important;

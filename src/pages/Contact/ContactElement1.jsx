@@ -17,7 +17,7 @@ const ContactElement1 = () => {
                         <Grid
                           item
                           xs={12}
-                          sm={12}
+                          sm={6}
                           md={6}
                           lg={6}
                           className="form-column form-column1"
@@ -33,7 +33,7 @@ const ContactElement1 = () => {
                         <Grid
                           item
                           xs={12}
-                          sm={12}
+                          sm={6}
                           md={6}
                           lg={6}
                           className="form-column form-column2"
@@ -81,7 +81,14 @@ const ContactElement1 = () => {
                   <strong>Phone:</strong> (866) 233-6260
                 </p>
                 <p>
-                  <strong>Email:</strong> inquiry@nationalholeinoneregistry.com
+                  <strong>Email:</strong>{" "}
+                  <a
+                    style={{ color: "#0d4a2b" }}
+                    href="mailto:inquiry@nationalholeinoneregistry.com"
+                  >
+                    {" "}
+                    inquiry@nationalholeinoneregistry.com{" "}
+                  </a>
                 </p>
                 <p>
                   <strong>Address:</strong> 1901 Associates Lane, Suite F
@@ -220,5 +227,25 @@ const ContactElement1Wrapper = styled.div`
     color: #666;
     line-height: 1.7em;
     font-size: 14px;
+  }
+
+  @media screen and (max-width: 980px) {
+    .et-pb-column {
+      width: 100%;
+      margin-bottom: 30px;
+      margin-right: 0 !important;
+    }
+  }
+
+  @media screen and (min-width: 150px) and (max-width: 840px) {
+    .et-pb-section {
+      margin-top: 50px;
+    }
+  }
+
+  @media screen and (max-width: 599px) {
+    .form-column2 {
+      padding-left: 0 !important;
+    }
   }
 `;
