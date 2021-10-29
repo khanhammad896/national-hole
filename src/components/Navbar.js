@@ -90,7 +90,7 @@ const Navbar = () => {
                     <Link to="/about">About</Link>
                   </li>
                   <li>
-                    <Link>Register</Link>
+                    <Link to="/look-up">Register</Link>
                   </li>
                   <li>
                     <Link>Certificates</Link>
