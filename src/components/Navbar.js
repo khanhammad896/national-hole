@@ -46,7 +46,7 @@ const Navbar = () => {
                   <Link to="/about">About</Link>
                 </li>
                 <li className="menu-item">
-                  <Link>Register</Link>
+                  <Link to="/register">Register</Link>
                 </li>
                 <li className="menu-item">
                   <Link to="/look-up">Registry Lookup</Link>
@@ -90,7 +90,7 @@ const Navbar = () => {
                     <Link to="/about">About</Link>
                   </li>
                   <li>
-                    <Link to="/look-up">Register</Link>
+                    <Link to="/register">Register</Link>
                   </li>
                   <li>
                     <Link>Certificates</Link>
@@ -108,7 +108,7 @@ const Navbar = () => {
                     <Link to="/contact">Contact</Link>
                   </li>
                   <li>
-                    <Link>Search Registry</Link>
+                    <Link to="/look-up">Search Registry</Link>
                   </li>
                 </ul>
               </div>
@@ -153,7 +153,7 @@ const Navbar = () => {
                         <Link to="/about">About</Link>
                       </li>
                       <li className="menu-item">
-                        <Link>Register</Link>
+                        <Link to="/register">Register</Link>
                       </li>
                       <li className="menu-item">
                         <Link to="/look-up">Registry Lookup</Link>
@@ -189,7 +189,12 @@ const NavbarWrapper = styled.div`
   width: 100%;
 
   .MuiGrid-container {
-    justify-content: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: 1130px;
   }
 
   #site-logo,
@@ -290,8 +295,17 @@ const NavbarWrapper = styled.div`
     background: #484848;
   }
 
+  @media only screen and (min-width: 641px) {
+    #site-log {
+      width: 41.66667%;
+    }
+    #sd-socials {
+      width: 58.33333%;
+      flex-grow: 1;
+    }
+  }
   @media screen and (min-width: 841px) and (max-width: 1039px) {
-    .#site-logo,
+    #site-logo,
     #sd-socials {
       width: 100% !important;
       text-align: center;
