@@ -1,0 +1,57 @@
+{
+  "factsData": [
+    {
+      "factsNo": 0,
+      "factsHeading": "What constitutes a valid hole in one?",
+      "factsPara": "The Rules of Golf do not address the issue of the validity of a hole in one. The USGA recommends that a hole in one be considered valid:",
+      "factsBullet": [
+        "If made during a round of at least nine holes, except that a hole in one made during a match should be acceptable even if the match ends before the stipulated round is completed",
+        "If the player is playing one ball; a hole in one made in a practice round in which the player is playing two or more balls should not be acceptable",
+        "If attested by an acceptable witness",
+        "If made at a hole with a temporary tee and/or putting green in use, even if the Committee did not specifically define the teeing ground with tee-markers; the length of the hole at the time should be stated on any certificate",
+        "If made in a “scramble” competition, for example, a Captain’s Choice"
+      ]
+    },
+    {
+      "factsNo": 1,
+      "factsHeading": "What is the chance that a golfer will make a hole in one?",
+      "factsPara": "",
+      "factsBullet": [
+        "Tour player making an ace: 3,000 to 1",
+        "Low-handicapper making an ace: 5,000 to 1",
+        "Average player making an ace: 12,000 to 1",
+        "Two players from the same foursome acing the same hole: 17 million to 1",
+        "One player making two holes-in-one in the same round: 67 million to 1"
+      ]
+    },
+    {
+      "factsNo": 2,
+      "factsHeading": "Other hole-in-one facts",
+      "factsPara": "",
+      "factsBullet": [
+        "There are approximately 450 million rounds of golf played each year in the U.S",
+        "On average each course has about 25,000 – 30,000 rounds played each year",
+        "Each course reports 10-15 hole in ones each year",
+        "A hole in one is scored once every 3,500 golf rounds",
+        "Odds of making a hole in one is 1:3500",
+        "Only 1-2% of golfers score a hole in one during the year",
+        "Average years of playing is 24",
+        "Average handicap of golfers making hole in one is 14",
+        "Age group that makes the most holes in one is 50-59 (25%) and the next highiest is 40-49 (24%)",
+        "Ball used most often is Titleist (45%), Nike (14%), and Top Flite (11%)",
+        "A Hole in One on a par four is called an Albatross"
+      ]
+    },
+    {
+      "factsNo": 3,
+      "factsHeading": "Facts just for women",
+      "factsPara": "",
+      "factsBullet": [
+        "16% of holes in one are made by women",
+        "Average age is 55",
+        "Average years of playing is 15",
+        "Average hole length is 111 yards"
+      ]
+    }
+  ]
+}

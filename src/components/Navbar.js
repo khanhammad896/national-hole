@@ -52,13 +52,13 @@ const Navbar = () => {
                   <Link to="/look-up">Registry Lookup</Link>
                 </li>
                 <li className="menu-item">
-                  <Link>Certificates</Link>
+                  <Link to="/certificate">Certificates</Link>
                 </li>
                 <li className="menu-item">
                   <Link>Products</Link>
                 </li>
                 <li className="menu-item">
-                  <Link>Facts & Feats</Link>
+                  <Link to="/facts-feats">Facts & Feats</Link>
                 </li>
                 <li className="menu-item">
                   <Link to="./contact">Contact</Link>
@@ -93,16 +93,16 @@ const Navbar = () => {
                     <Link to="/register">Register</Link>
                   </li>
                   <li>
-                    <Link>Certificates</Link>
+                    <Link to="/certificate">Certificates</Link>
                   </li>
                   <li>
                     <Link>Products</Link>
                   </li>
                   <li>
-                    <Link>Facts and Feats</Link>
+                    <Link to="/facts-feats">Facts and Feats</Link>
                   </li>
                   <li>
-                    <Link>Records</Link>
+                    <Link to="/records">Records</Link>
                   </li>
                   <li>
                     <Link to="/contact">Contact</Link>
@@ -159,13 +159,13 @@ const Navbar = () => {
                         <Link to="/look-up">Registry Lookup</Link>
                       </li>
                       <li className="menu-item">
-                        <Link>Certificates</Link>
+                        <Link to="/certificate">Certificates</Link>
                       </li>
                       <li className="menu-item">
                         <Link>Products</Link>
                       </li>
                       <li className="menu-item">
-                        <Link>Facts & Feats</Link>
+                        <Link to="/facts-feats">Facts & Feats</Link>
                       </li>
                       <li className="menu-item">
                         <Link to="./contact">Contact</Link>

@@ -1,0 +1,75 @@
+{
+  "recordsData": [
+    {
+      "recordNo": 0,
+      "recordText": "Two Holes In One in the Same Round",
+      "recordLink": "twosameround"
+    },
+    {
+      "recordNo": 1,
+      "recordText": "Five Holes In One on the Same Hole",
+      "recordLink": "fivesameround"
+    },
+    {
+      "recordNo": 2,
+      "recordText": "Four Holes In One on the Same Hole",
+      "recordLink": "fourholesamehole"
+    },
+    {
+      "recordNo": 3,
+      "recordText": "Four Holes In One in 30 Days",
+      "recordLink": "fourholes30"
+    },
+    {
+      "recordNo": 4,
+      "recordText": "Four Holes In One in 1 Year on 4 Different Courses",
+      "recordLink": "fourhole1yr"
+    },
+    {
+      "recordNo": 5,
+      "recordText": "Two Holes In One on Same Day – Different Rounds",
+      "recordLink": "woholesameday"
+    },
+    {
+      "recordNo": 6,
+      "recordText": "Scoring Hole In One from Both Sides",
+      "recordLink": "holeinoneboth"
+    },
+
+    {
+      "recordNo": 7,
+      "recordText": "Spousal Grand Slam Hole In One",
+      "recordLink": "spousalgrandslam"
+    },
+    {
+      "recordNo": 8,
+      "recordText": "Family Hole In One – Same Hole",
+      "recordLink": "familyhio"
+    },
+    {
+      "recordNo": 9,
+      "recordText": "Father / Daughter Hole In One – Same Hole",
+      "recordLink": "fatherdaughter"
+    },
+    {
+      "recordNo": 10,
+      "recordText": "Mother / Son Hole In One – Same Day",
+      "recordLink": "motherson"
+    },
+    {
+      "recordNo": 11,
+      "recordText": "2 Holes In One in a 9 Hole Match (Jr Achievement Under 18)",
+      "recordLink": "juniorachiev"
+    },
+    {
+      "recordNo": 12,
+      "recordText": "Holes in One Spanning 4 Generations",
+      "recordLink": "4Generations"
+    },
+    {
+      "recordNo": 13,
+      "recordText": "Scoring 4-3-2-1 on Par 3s in Single Round",
+      "recordLink": "4321"
+    }
+  ]
+}

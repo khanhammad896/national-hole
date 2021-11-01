@@ -8,10 +8,11 @@ import icon from "../../assets/Home-National-Hole-In-One-Registry-1.png";
 import FormStep1 from "./FormStep1";
 import FormStep2 from "./FormStep2";
 import FormStep3 from "./FormStep3";
+import Popup from "./Popup";
 
 const RegisterElement1 = () => {
   const [tabIndex, setTabIndex] = React.useState(1);
-
+  const [showPopup, setShowPopup] = React.useState(true);
   const formHandler = () => {
     if (tabIndex === 1) {
       return <FormStep1 handleTabs={handleTabs} />;
@@ -27,9 +28,13 @@ const RegisterElement1 = () => {
   const handleTabs = (value) => {
     setTabIndex(value);
   };
+  const handlePopup = () => {
+    setShowPopup(false);
+  };
   return (
     <>
       <RegisterElement1Wrapper arrow={arrow} icon={icon} arrow2={arrow2}>
+        {showPopup && tabIndex === 3 && <Popup handlePopup={handlePopup} />}
         <div className="et-pb-section">
           <div className="et-pb-row">
             <div>
@@ -65,7 +70,7 @@ const RegisterElement1 = () => {
                             <span className="show-none">2</span>
                             <div className="cf-show-me-on-mobile">
                               <h4 className="cf-big">SECOND STEP</h4>
-                              Vital Information
+                              Additional Information
                             </div>
                           </li>
                           <li
@@ -78,7 +83,7 @@ const RegisterElement1 = () => {
                             <span className="show-none">3</span>
                             <div className="cf-show-me-on-mobile">
                               <h4 className="cf-big">THIRD STEP</h4>
-                              Vital Information
+                              Registration Submitted
                             </div>
                           </li>
                         </ul>
